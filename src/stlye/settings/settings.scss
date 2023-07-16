@@ -1,0 +1,144 @@
+@import '../_styleVariables';
+
+
+.settings_super{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.settings_window{
+    
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    @media (max-width: $width-medium){
+     width: 90vw;
+    }
+}
+.settings_top{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(118, 118, 118, 0.468);
+    p{
+        color: rgb(95, 95, 95);
+        font-weight: 700;
+        margin-left: 3%;
+
+    }
+    .close_button{
+        .icon{
+            color: rgb(84, 84, 84);
+        }
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        margin-right: 10px;
+    }
+}
+.settings_body{
+    width: 100%;
+    .settings_titles{
+        color: rgb(3, 3, 3, 0.8);
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 3%;
+    }
+    .time_inputs{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+       
+    }
+    .input_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $width-medium){
+            justify-content: space-between;
+        }
+    }
+    .input_cont_single{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            color: rgb(3, 3, 3, 0.8);
+            margin-left: 3%;
+            @media (max-width: $width-medium){
+            font-size: .8rem;
+            }
+        }
+        input{
+            padding-left: 2%;
+            width: 20%;
+            margin-right: 2%;
+            @media (max-width: $width-medium){
+                font-size: .9rem;
+            }
+
+        }
+        .switch{
+            width: 15%;
+            height: 30px;
+            margin-right: 2%;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            @media (max-width: $width-medium){
+                height: 20px;
+            }
+            .ball{
+                height: 35px;
+                width: 35px;
+                background-color: rgb(244, 244, 244);
+                border-radius: 50%;
+                @media (max-width: $width-medium){
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+    p{
+        width: 80%;
+        color: rgba(95, 95, 95, 0.7);
+        font-weight: 700;
+        @media (max-width: $width-medium){
+          font-size: .8rem;
+        }
+    }
+    input{
+        height: 30px;
+        width: 80%;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+        color: gray;
+        font-weight: 500;
+        background-color: rgba(128, 128, 128, 0.2);
+        @media (max-width: $width-medium){
+            height: 20px;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}

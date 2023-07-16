@@ -1,0 +1,34 @@
+@import '../_styleVariables';
+
+.custom-tile {
+    background-color: #f2f2f2;
+    color: #333 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0 !important;
+    border-radius: 100%;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+    /* Estilos para los días de los meses vecinos */
+    color: rgba(73, 73, 73, 0.518) !important;
+  }
+  
+
+.custom-tile.react-calendar__tile--active {
+    background-color: #cacdd0 !important;
+    color: #fff !important;
+  }
+  
+  .custom-tile.react-calendar__tile--active:hover {
+    background-color: #d1d1d1 !important;
+  }
+  .react-calendar__month-view__weekdays {
+    background-color: #f2f2f2;
+  }
+  
+  .react-calendar__month-view__weekdays abbr[aria-label] {
+    text-decoration: none !important;
+    font-weight: 100;
+  }
